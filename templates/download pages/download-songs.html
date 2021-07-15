@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/styles.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/floating.css')}}">
+        <title>spotify2mp3</title>
+    </head>
+    <body>
+        <h1 class="green-text page-title">{{category}}</h1>
+        <p id="href" style="display: none;">{{href}}<p>
+        <button class="btn" onclick="downloadAll()">download all songs</button>
+        
+        <table class="table table-borderless table-sm" id="main-table">
+          <thead>
+            <tr>
+              <th class="col" scope="col">#</th>
+              <th class="col" scope="col">DOWNLOAD</th>
+              <th class="col" scope="col">TITLE</th>
+              <th class="col" scope="col">ARTIST</th>
+              <th class="col" scope="col">ALBUM</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <template id="song-data-template">
+              <tr>
+
+                <th scope="row">
+                  <div><p class="numbering"></p></div>
+                </th>
+                
+                <th scope="row" class="album-image" style="position:relative;"></th>
+                <th scope="row" class='song-name'></th>
+                <th scope="row" class='artists-names'></th>
+                <th scope="row" class="album-name"></th>
+
+              </tr>
+            </template>
+
+          </tbody>
+        </table>
+
+        <div id="load-more-button"></div>
+
+        <div id="CenterDIV">
+          <div class="divFloat">
+            <input type="button" onclick="closePopUp()" class="btClose" value="Cancel" />
+            <h1>Preparing data</h1>
+            <div class="spinner-border" style="color: #1DB954;" role="status"><span class="visually-hidden">Loading...</span></div>
+           </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../../static\javascript/lazyLoadSongs.js"></script>
+        <script type="text/javascript" src="../../static/javascript/download.js"></script>
+
+    </body>
+</html>

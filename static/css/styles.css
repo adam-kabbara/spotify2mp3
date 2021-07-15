@@ -1,0 +1,93 @@
+body{
+    background-color: #191414;
+    padding: 2vw;
+}
+
+a:hover {
+    color: #1DB954;
+}
+a:active {
+    color: #1DB954;
+}
+
+hr { 
+    height: 6px;
+    border: none;
+    background: white;
+}
+
+p{
+    font-size:larger;
+}
+
+#intro-text{
+    color: #1DB954;
+    font-size:4vw;
+}
+
+#logo{
+    margin-top:-10%;
+    margin-bottom:-10%;
+}
+
+#start_btn{
+    margin-top: 8vh;
+    width: 15vw;
+    font-size: 2vw;
+}
+
+#logout-btn{
+    position: absolute;
+    right: 10px;
+    top: 2vw;
+}
+
+.btn{
+    color:#191414;
+    background-color: #1DB954;
+    border-radius: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.green-text{
+    color: #1DB954;
+}
+
+.col{
+    color: rgb(165, 165, 165);
+}
+
+.song-context{
+    color: white;
+}
+
+.beside{
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.download-status{
+    position: absolute;
+    top: 31%;
+    left: 33%;
+    display: none;
+}
+
+.max-width{
+    max-width: 20vw;
+    min-width: 120px;
+}
+
+.numbering{
+    color: rgb(165, 165, 165);
+}
+
+.icon{
+    width:30%;
+}

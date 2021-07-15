@@ -1,0 +1,25 @@
+a:hover {
+    color: white;
+}
+a:active {
+    color: white;
+}
+a{
+    color: black;
+}
+
+p{
+    font-size: medium;
+}
+
+.content{
+    color: rgb(165, 165, 165);
+}
+
+.playlist-image{
+    width: 100%;
+}
+
+.album-image{
+    width: 100%;
+}

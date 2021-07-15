@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/styles.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/styles-override.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/grid.css')}}">
+        <title>spotify2mp3</title>
+    </head>
+    <body>
+        <h1 class="green-text page-title">SAVED PLAYLISTS</h1>
+
+        <div class="grid-container" id="grid-base">
+            <template  id="grid-template">
+                <form method="post">
+                    <button name="data" type="submit" class="grid-item btn">
+                        <img class="playlist-image" />
+                        <p class="playlist-description">Description: </p>
+                        <p>Name: <a class="playlist-name"></a></p>
+                        <p>Author: <a class="playlist-author"></a></p>
+                        <p class='song-count'>Number of songs: </p>
+                    </button>    
+                </form>
+            </template>             
+        </div>
+
+        <div id="load-more-button" style="margin-top: 30px;"></div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../../static/javascript/lazyLoadPlaylists.js"></script>
+
+    </body>
+</html>
