@@ -22,7 +22,6 @@ p{
 
 #intro-text{
     color: #1DB954;
-    font-size:4vw;
 }
 
 #logo{
@@ -31,9 +30,8 @@ p{
 }
 
 #start_btn{
-    margin-top: 8vh;
-    width: 15vw;
-    font-size: 2vw;
+    margin-top: 7vh;
+    width: 12vh;
 }
 
 #logout-btn{
@@ -59,7 +57,7 @@ p{
     color: #1DB954;
 }
 
-.col{
+.table-title{
     color: rgb(165, 165, 165);
 }
 
@@ -90,4 +88,9 @@ p{
 
 .icon{
     width:30%;
+}
+
+.spacer{
+    background-color: inherit; 
+    height: 10px;
 }

@@ -2,3 +2,4 @@ temp/
 private.py
 api-function.txt
 .vscode/
+__pycache__/

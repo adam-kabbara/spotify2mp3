@@ -5,38 +5,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/styles.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/footer.css')}}">
         <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/grid.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/styles-override.css')}}">
         <title>spotify2mp3</title>
     </head>
-    <body>
+    <body class="Frame">
         <h1 class="green-text" id="greeting">Hello {{usr_name}}</h1>
         <form method="post">
             <button type="submit" name="logout_btn" value="log out" id= "logout-btn" class="btn">log out</button>
         </form>
 
         <hr>
-        <div class="grid-container">
+        <div class="grid-container Row Expanded">
 
                 <button class="grid-item btn" onclick="redirect('/saved-songs-download/')">
-                    <p>saved songs</p>
+                    <p style="color: white;" >saved songs</p>
                     <img src="{{ url_for('static', filename='images/heart.svg')}}" class="icon center">
                 </button>
                 <button class="grid-item btn" onclick="redirect('/recently-played-songs-download/')">
-                    <p>recent songs</p>
+                    <p style="color: white;" >recent songs</p>
                     <img src="{{ url_for('static', filename='images/recent.svg')}}" class="icon center">
                 </button>
                 <button class="grid-item btn" onclick="redirect('/top-songs-download/')">
-                    <p>top songs</p>
+                    <p style="color: white;" >top songs</p>
                     <img src="{{ url_for('static', filename='images/graph.svg')}}" class="icon center">
                 </button>
                 <button class="grid-item btn" onclick="redirect('/load-saved-playlists/')">
-                    <p>saved playlists</p>
-                    <img src="{{ url_for('static', filename='images/playlist.svg')}}" style="width:40%" class="icon center">
+                    <p style="color: white;" >saved playlists</p>
+                    <img src="{{ url_for('static', filename='images/playlist.svg')}}" style="width:35%" class="icon center">
                 </button>
                 <button class="grid-item btn" onclick="redirect('/load-saved-albums/')">
-                    <p>saved albums</p>
-                    <img src="{{ url_for('static', filename='images/album.svg')}}" style="width:40%" class="icon center">
+                    <p style="color: white;" >saved albums</p>
+                    <img src="{{ url_for('static', filename='images/album.svg')}}" style="width:35%" class="icon center">
                 </button>
+        </div>
+        
+        <div class="Row spacer">&zwnj;</div>
+        <div class="Row column-container">
+            <div class="column-item">Made by Adam.K</div>
+            <div class="column-item"><a href="https://github.com/adam-kabbara/spotify2mp3" target="_blank">github</a></div>
+            <div class="column-item"><a href="/attribution/">attribution</a></div>
+            <div class="column-item"><a href="/logout/">logout</a></div>
+        </div>
+
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

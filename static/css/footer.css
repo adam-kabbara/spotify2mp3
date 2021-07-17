@@ -1,16 +1,17 @@
-html, body {
+html, body{
     height: 100%;
     margin: 0pt;
 }
-.Frame {
+.Frame{
     display: table;
     height: 100%;
     width: 100%;
 }
 
-.Row {
+.Row{
     display: table-row;
+    height: 1px;
 }
-.Row.Expand {
+.Row.Expand{
     height: auto;
 }

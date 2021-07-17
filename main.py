@@ -13,7 +13,7 @@ import private
 
 app = Flask(__name__)
 app.secret_key = private.secret_key
-base_url = f'http://{private.ip}'
+base_url = f'http://{private.ip}:5000'
 
 scope = "user-library-read user-read-recently-played user-top-read user-read-private playlist-read-collaborative playlist-read-private"
 client_id = private.client_id
@@ -180,6 +180,11 @@ def download_song():
             return send_file(directory, as_attachment=True)
     else:
         return redirect(url_for('login'))
+
+
+@app.route('/attribution/')
+def attribution():
+    return render_template('attribution.html')
 
 
 # SPOTIFY API HELPER FUNCTIONS 

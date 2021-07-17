@@ -12,3 +12,16 @@
       0 5px 10px rgba(0, 0, 0, 0.1),
       0 20px 20px rgba(0, 0, 0, 0.05);
   }
+
+.column-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 1em;
+  background: rgb(165, 165, 165);
+}
+
+.column-item{
+  height: 100%;
+  padding-right: 1em;
+  text-align: center;
+}
