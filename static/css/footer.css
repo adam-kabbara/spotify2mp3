@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;
+    margin: 0pt;
+}
+.Frame {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.Row {
+    display: table-row;
+}
+.Row.Expand {
+    height: auto;
+}
