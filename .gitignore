@@ -3,3 +3,4 @@ private.py
 api-function.txt
 .vscode/
 __pycache__/
+.python-version
