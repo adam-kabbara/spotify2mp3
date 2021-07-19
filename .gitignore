@@ -4,3 +4,5 @@ api-function.txt
 .vscode/
 __pycache__/
 .python-version
+.uwsgi_config.ini
+.uwsgi_config.ini.swp
